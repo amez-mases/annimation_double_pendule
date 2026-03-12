@@ -143,4 +143,3 @@ def simulation_double_pendule(dt=0.01, tmax=20):
 
 thetas = simulation_double_pendule()
 animer_double_pendule_2D(thetas, step=2)
-
