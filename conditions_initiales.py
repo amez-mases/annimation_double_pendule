@@ -45,7 +45,7 @@ def simulation_double_pendule(dt=0.01, tmax=20):
 
     # conditions initiales (presque identiques)
     thetas1[0] = [np.pi/2, 0, np.pi/2, 0]
-    thetas2[0] = [np.pi/2 + 0.01, 0, np.pi/2, 0]
+    thetas2[0] = [np.pi/2 + 0.0001, 0, np.pi/2, 0]
 
     # intégration RK4
     for i in range(n-1):
@@ -123,6 +123,6 @@ def mise_a_jour(i):
     return ligne1,ligne2,trace1,trace2
 
 
-ani = FuncAnimation(fig,mise_a_jour,frames=pas,interval=20)
+ani = FuncAnimation(fig,mise_a_jour,frames=pas,interval=0.1)
 
 plt.show()
