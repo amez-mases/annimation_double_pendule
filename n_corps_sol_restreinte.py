@@ -2,10 +2,10 @@ import numpy as np
 import plotly.graph_objects as go
 from scipy.integrate import solve_ivp
 
-m1 = 1000
-m2 = 2
+m1 = 2496
+m2 = 100
 mu = m2 / (m1 + m2)
-C = 4.1
+C = 3.0
 
 # position et vitesse initiales de m3
 x0 = 0.5
